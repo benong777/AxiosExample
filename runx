@@ -1,0 +1,21 @@
+#-- After copying project to a different name,
+#-- install the iOS dependencies managed by CocoaPods.
+# bundle exec pod install
+
+#-- Create project
+# npx react-native@latest init mykast
+  
+#-- Run simulation
+# npx react-native run-android
+# npx react-native run-ios
+
+#-- React Navigation
+# npm install @react-navigation/native
+
+	#-- Dependencies into a bare React Native CLI project:
+	# npm install react-native-screens react-native-safe-area-context
+	# npx pod-install ios
+	# npm install @react-navigation/native-stack
+
+#-- Zustand
+# npm i zustand

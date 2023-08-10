@@ -15,6 +15,7 @@ import {
   Text,
   useColorScheme,
   View,
+  ActivityIndicator,          // Loading spinner
 } from 'react-native';
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
@@ -37,6 +38,9 @@ function App() {
   }, []);               // Dependency array
 
   console.log({data: data, loading, error});
+
+  //-- Loading: Show spinner when loading
+  if (loading) return <ActivityIndicator size="large" />
 
 
   return (

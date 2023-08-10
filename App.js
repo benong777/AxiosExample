@@ -32,9 +32,9 @@ function App() {
   //-- Bring in custom hook
   const [{ data, loading, error }, listUsers] = useListUsers();
 
-  useEffect(() => {
+  useEffect(() => {     // Run function only once.. unless any item in dependency array changes
     listUsers();
-  }, []);
+  }, []);               // Dependency array
 
   console.log({data: data, loading, error});
 

@@ -42,6 +42,11 @@ function App() {
   //-- Loading: Show spinner when loading
   if (loading) return <ActivityIndicator size="large" />
 
+  //-- Error: Show message when error occurred
+  if (error) return (
+      <Text>{error}</Text>
+  );
+
 
   return (
     <SafeAreaView style={backgroundStyle}>
